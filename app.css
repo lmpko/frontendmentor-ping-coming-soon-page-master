@@ -46,12 +46,12 @@ main{
 .email-sub{
     display: flex;
     flex-direction: column;
-    padding: 1.5625rem;
+    padding: .625rem;
 }
 
 .email-sub input{
     border-radius: 3.125rem;
-    padding: .9375rem 1.5625rem;
+    padding: .625rem 1.5625rem;
     margin: .625rem 0;
     border: 1px solid var(--secondary-color);
 }
@@ -72,4 +72,5 @@ main{
 .preview-img{
     max-width: 100%;
     height: auto;
+    margin: 3.75rem 0;
 }
