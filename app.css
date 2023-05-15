@@ -1,0 +1,14 @@
+:root{
+    --primary-color: hsl(223, 87%, 63%);
+
+    --secondary-color: hsl(223, 100%, 88%);
+    --tertiary-color: hsl(354, 100%, 66%);
+
+    --fouthary-color: hsl(0, 0%, 59%);
+    --fifthary-color: hsl(209, 33%, 12%);
+}
+
+body{
+    font-size: 1.25rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
