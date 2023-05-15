@@ -57,8 +57,9 @@ main{
 .email-sub input{
     border-radius: 3.125rem;
     padding: .625rem 1.5625rem;
-    margin: .625rem 0;
     border: 1px solid var(--secondary-color);
+    grid-area: input;
+    margin: .9375rem 0 ;
 }
 
 .email-sub input::placeholder{
@@ -72,6 +73,7 @@ main{
     padding: .9375rem 0;
     border: none;
     box-shadow: var(--secondary-color) 0 .9375rem .625rem -0.625rem;
+    grid-area: button;
 }
 
 .preview-img{
@@ -109,6 +111,24 @@ main{
     margin: 0 .625rem  ;
   }
 
+  .email-sub button:hover,
+  .email-sub button:focus{
+    cursor: pointer;
+  }
+
+  .error{
+    font-size: 0.7rem;
+    padding: 0 0 1.5625rem 0;
+    color: var(--tertiary-color);
+    text-align: center;
+    grid-area: error;
+    margin-top: .625rem ;
+  }
+
+  .email-sub .is-invalid{
+    border: 2px solid var(--tertiary-color);
+  }
+
   @media screen and (min-width: 768px){
     main{
         width: 45%;
@@ -119,17 +139,26 @@ main{
     }
     
     .email-sub{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 1fr 0.5fr;
+        grid-template-areas: 
+        "input button"
+        "error .";
 
-    .email-sub input{
-        width: 60%;
+        
     }
 
     .email-sub button{
-        width: 35%;
         margin-left: 1.5625rem ;
+    }
+
+    .email-sub input{
+        margin: 0;
+    }
+
+    .error{
+        padding-left: 1.5625rem ;
+        text-align: left;
     }
   }
