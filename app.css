@@ -14,14 +14,20 @@ body{
     margin: 0;
 }
 
+main{
+    padding: .9375rem;
+}
+
 .overview{
     text-align: center;
+    font-size: 1.25rem;
 }
 
 .overview h1{
     color: var(--fouthary-color);
     font-weight: 300;
     margin-top: 3.5625rem ;
+    font-size: 1.5rem;
 }
 
 .overview h1 span{
@@ -29,9 +35,18 @@ body{
     font-weight: 700;
 }
 
+.overview p{
+    font-size: 1rem;
+}
+
+.overview img{
+    padding-top: 3.125rem;
+}
+
 .email-sub{
     display: flex;
     flex-direction: column;
+    padding: 1.5625rem;
 }
 
 .email-sub input{
@@ -52,4 +67,9 @@ body{
     padding: .9375rem 0;
     border: none;
     box-shadow: var(--secondary-color) 0 .9375rem .625rem -0.625rem;
+}
+
+.preview-img{
+    max-width: 100%;
+    height: auto;
 }

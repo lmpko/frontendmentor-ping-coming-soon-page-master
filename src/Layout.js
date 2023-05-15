@@ -9,7 +9,7 @@ const Layout = () => {
     <>
       <OverviewComponent/>
       <FormComponent />
-      <img src={preview} alt="preview" />
+      <img src={preview} alt="preview" className='preview-img'/>
       <FooterComponent/>
     </>
   )
