@@ -2,7 +2,10 @@ import React from 'react'
 
 const FormComponent = () => {
   return (
-    <div>FormComponent</div>
+    <div>
+      <input type="text" placeholder='Your email address'/>
+      <button>Notify Me</button>
+    </div>
   )
 }
 
